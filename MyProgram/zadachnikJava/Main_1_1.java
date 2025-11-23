@@ -23,7 +23,5 @@ public class Main_1_1 {
         // выводим в косоль резултат 
         print.print1StringInt(num);
         print.print1String(PolpOrOtriNum);
-
-
     }
 }
