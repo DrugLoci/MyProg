@@ -10,18 +10,18 @@ public class Main_1_1 {
     public static void main(String[] args) {
 
         // создаем объекты 
-        GeneraciyaNum generNum = new GeneraciyaNum();
-        Or poloOrOtri = new Or();
-        MyPrint print = new MyPrint();
+        GeneraciyaNum generaciyaNum = new GeneraciyaNum();
+        Or or = new Or();
+        MyPrint myPrint = new MyPrint();
 
         // генерируем число 
-        int num = generNum.generaciya1Num();
+        int num = generaciyaNum.generaciya1Num();
 
         // определяем пооложительное число или отрицательное 
-        String PolpOrOtriNum = poloOrOtri.negativeOrPasitive(num);
+        String PolpOrOtriNum = or.negativeOrPasitive(num);
 
         // выводим в косоль резултат 
-        print.print1StringInt(num);
-        print.print1String(PolpOrOtriNum);
+        myPrint.print1StringInt(num);
+        myPrint.print1String(PolpOrOtriNum);
     }
 }
