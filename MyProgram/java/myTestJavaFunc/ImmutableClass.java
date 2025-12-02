@@ -1,24 +1,14 @@
-import java.util.Arrays;
+import java.util.List;
 
-public final  class ImmutableClass {
+public final class ImmutableClass {
 
-    private final String[] nameUsers;
+    private final List<String> NAME_GROUP;
 
-//    public ImmutableClass(String[] nameUsers) {
-//        this.nameUsers = nameUsers; // опасно
-//    }
-
-    public  ImmutableClass(String[] nameUsers) {
-        this.nameUsers = Arrays.copyOf(nameUsers , nameUsers.length);
+    public ImmutableClass(List<String> nameGroup) {
+        this.NAME_GROUP = List.copyOf(nameGroup);
     }
 
-//    private final String[] nameUsers = {"A", "B", "C"};
-
-//    public ImmutableClass(String[] nameUsers) {
-//        this.nameUsers = nameUsers;
-//    }
-
-    public String[] getNameUsers() {
-        return nameUsers; // ошбика, из за которой внешний мир получил адрес массива в куще на который ссылалось иммутабельное поле 
+    public List<String> getNAME_GROUP() {
+        return List.copyOf(NAME_GROUP);
     }
 }

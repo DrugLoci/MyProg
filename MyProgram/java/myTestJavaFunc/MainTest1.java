@@ -1,22 +1,24 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
 
 public class MainTest1 {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
+        List<String> name = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
 
-        String names[] = {"Anton", "Kiril", "Oleg"};
-        ImmutableClass immutableClass = new ImmutableClass(names);
+        for (int i = 0; i < 3; i++) {
+            String inputUser = scanner.nextLine().trim();
+            name.add(inputUser);
+        }
 
-        System.out.println(Arrays.toString(immutableClass.getNameUsers()));
+        ImmutableClass immutableClass = new ImmutableClass(name);
 
-        names[0] = "Nikita";
-        System.out.println(Arrays.toString(immutableClass.getNameUsers()));
+        System.out.println(immutableClass.getNAME_GROUP());
 
-        String names1[];
-        names1 = immutableClass.getNameUsers();   // ошибка допущена в иммутабельном классе
 
-        names1[0] = "Nikita";
-        System.out.println(Arrays.toString(immutableClass.getNameUsers()));
     }
 
 }
