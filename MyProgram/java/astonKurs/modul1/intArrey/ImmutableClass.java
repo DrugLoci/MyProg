@@ -11,3 +11,4 @@ public final class ImmutableClass {
         return Arrays.copyOf(NUM, NUM.length);
     }
 }
+xC
