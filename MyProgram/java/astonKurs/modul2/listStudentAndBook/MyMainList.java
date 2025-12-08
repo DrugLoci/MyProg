@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class MyMainList {
 
     static void main(String[] args) {
         File myFile = new File("/home/vboxuser/testFile.txt");
@@ -102,8 +102,9 @@ public class Main {
 //                .map(s -> s.substring(1))
 //                .forEach(System.out::println);
 
-        list.stream() // Оставить только уникальные книги
+//        list.stream() // Получить список книг, которые написал каждый студент
     }
 }
+
 
 
