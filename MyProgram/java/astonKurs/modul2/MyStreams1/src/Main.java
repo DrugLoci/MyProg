@@ -95,10 +95,14 @@ public class Main {
 //                .map(s -> s.substring(1))
 //                .forEach(System.out::println);
 
-        list.stream() // Отсортировать книги по количеству страниц (Не забывайте про условия для сравнения объектов)
-                .filter(s -> s.contains("Book "))
-                .sorted(Comparator.comparingInt(s -> Integer.parseInt(s.split("pages")[1].split(" ")[1])))
-                .forEach(System.out::println);
+//        list.stream() // Отсортировать книги по количеству страниц (Не забывайте про условия для сравнения объектов)
+//                .filter(s -> s.contains("Book "))
+//                .sorted(Comparator.comparingInt(s -> Integer.parseInt(s.split("pages")[1].split(" ")[1])))
+//                .map(s -> s.split("]")[0])
+//                .map(s -> s.substring(1))
+//                .forEach(System.out::println);
+
+        list.stream() // Оставить только уникальные книги
     }
 }
 
