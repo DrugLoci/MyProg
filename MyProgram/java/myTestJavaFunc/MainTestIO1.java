@@ -7,8 +7,8 @@ import java.util.List;
 public class MainTestIO1 {
 
     public static void main(String[] args) {
-        File myFile = new File("/home/vboxuser/testFile.txt");
-        List<String> list = new ArrayList<>();
+//        File myFile = new File("/home/vboxuser/testFile.txt");
+//        List<String> list = new ArrayList<>();
 
 //        try (FileOutputStream fileOutputStream = new FileOutputStream(myFile, true)) {
 //            String strStudents = "Name: Anton\nName: Mike\nName: Kate\n";
@@ -21,11 +21,11 @@ public class MainTestIO1 {
 //        }
 
 
-        try (FileInputStream fileInputStream = new FileInputStream(myFile)) {
-            list = new ArrayList<>(List.of(new String(fileInputStream.readAllBytes())));
-            System.out.println(list);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+//        try (FileInputStream fileInputStream = new FileInputStream(myFile)) {
+//            list = new ArrayList<>(List.of(new String(fileInputStream.readAllBytes())));
+//            System.out.println(list);
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
     }
 }
