@@ -22,10 +22,12 @@ public class Main {
 
 
         try (FileInputStream fileInputStream = new FileInputStream(myFile)) {
-            list = new ArrayList<>(List.of(new String(fileInputStream.readAllBytes())));
+            list = new ArrayList<>(List.of(new String(fileInputStream.readAllBytes()).split("\n")));
             System.out.println(list);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+
     }
 }

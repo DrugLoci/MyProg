@@ -6,7 +6,7 @@ import java.util.List;
 
 public class MainTestIO1 {
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
         File myFile = new File("/home/vboxuser/testFile.txt");
         List<String> list = new ArrayList<>();
 
