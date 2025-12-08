@@ -10,4 +10,6 @@ public final class ImmutableClass {
     public int[] getNUM() {
         return Arrays.copyOf(NUM, NUM.length);
     }
+
+
 }
