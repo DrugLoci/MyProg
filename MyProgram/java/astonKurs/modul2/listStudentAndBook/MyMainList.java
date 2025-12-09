@@ -97,12 +97,40 @@ public class MyMainList {
 
 //        list.stream() // Отсортировать книги по количеству страниц (Не забывайте про условия для сравнения объектов)
 //                .filter(s -> s.contains("Book "))
-//                .sorted(Comparator.comparingInt(s -> Integer.parseInt(s.split("pages")[1].split(" ")[1])))  // ?????????????????????????????
+//                .sorted(Comparator.comparingInt(s -> Integer.parseInt(s.split("pages ")[1].split(" yer")[0])))
 //                .map(s -> s.split("]")[0])
 //                .map(s -> s.substring(1))
 //                .forEach(System.out::println);
 
-//        list.stream() // Получить список книг, которые написал каждый студент
+//        list.stream() // Оставить только уникальные книги
+//                .filter(s -> s.contains("Book "))
+//                .map(s -> s.split("Book ")[1].split(" pages")[0])
+//                .distinct()
+//                .forEach(System.out::println);
+
+//        list.stream() // Отфильтровать книги, оставив только те, которые были выпущены после 2000 года
+//                .filter(s -> s.contains("Book "))
+//                .filter(s -> Integer.parseInt(s.split(" yer ")[1].split("]")[0]) > 2000)
+//                .map(s -> s.split("]")[0].substring(1))
+//                .forEach(System.out::println);
+
+//        list.stream() // Ограничить стрим на 3 элементах
+//                .limit(3)
+//                .map(s -> s.split("]")[0].substring(1))
+//                .forEach(System.out::println);
+
+//        list.stream() // Получить из книг годы выпуска
+//                .filter(s -> s.contains("Book "))
+//                .map(s -> s.split(" yer ")[1].split("]")[0])
+//                .forEach(System.out::println);
+
+//        System.out.println(  // При помощи методов получения значения из Optional вывести в консоль год выпуска найденной книги, либо запись о том, что такая книга отсутствует
+//                list.stream() // При помощи методов короткого замыкания (почитайте самостоятельно что это такое) вернуть Optional от года
+//                .filter(s -> s.contains("Book "))
+//                .map(s -> Integer.parseInt(s.split(" yer ")[1].split("]")[0]))
+//                .filter(s -> s > 2000)
+//                .findFirst()
+//        );
     }
 }
 
