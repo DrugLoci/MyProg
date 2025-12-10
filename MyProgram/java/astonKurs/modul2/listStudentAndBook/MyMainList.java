@@ -98,8 +98,7 @@ public class MyMainList {
 //        list.stream() // Отсортировать книги по количеству страниц (Не забывайте про условия для сравнения объектов)
 //                .filter(s -> s.contains("Book "))
 //                .sorted(Comparator.comparingInt(s -> Integer.parseInt(s.split("pages ")[1].split(" yer")[0])))
-//                .map(s -> s.split("]")[0])
-//                .map(s -> s.substring(1))
+//                .map(s -> s.substring(1).split("]")[0])
 //                .forEach(System.out::println);
 
 //        list.stream() // Оставить только уникальные книги
