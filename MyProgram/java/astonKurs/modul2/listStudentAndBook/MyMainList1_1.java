@@ -1,3 +1,4 @@
+import java.awt.print.Book;
 import java.io.*;
 import java.util.*;
 
@@ -60,12 +61,10 @@ public class MyMainList1_1 {
 //                .skip(3)
 //                .forEach(System.out::println);
 
-//        list.stream() // Отсортировать книги по количеству страниц (Не забывайте про условия для сравнения объектов)
-//                .skip(3)
-////                .sorted(Comparator.comparingInt(s -> Integer.parseInt(s.split("pages ")[1].split(" yer")[0]))) // я понимаю как остортировать только так (стрый варинат)
-//                .sorted(Comparator.comparing(s -> s.split("pages ")[1].split(" yer")[0]))  // вот более правильный вариант
-////                .sorted()  // нет, я мог бы конечно переделать файл так что бы pages шел первым в строке и тогда бы так сработало но мне почему то эта идея не поравилась
-//                .forEach(System.out::println);  // по этому прошу сильно помидорами в меня не бросаться :)
+        list.stream() // Отсортировать книги по количеству страниц (Не забывайте про условия для сравнения объектов)
+                .skip(3)
+                .sorted(Comparator.comparingInt(Book::))
+                .forEach(System.out::println);
 
 //        list.stream() // Оставить только уникальные книги
 //                .skip(3)
