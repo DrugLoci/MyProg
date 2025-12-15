@@ -1,0 +1,112 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3" pages="2">
+  <diagram name="Class_Scaners" id="kwEOgvkkHItht9PXiZNh">
+    <mxGraphModel dx="1358" dy="842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RY103PyDIlXr2Isy-sJU-1" value="Клас отвечает за запросы пользователью на ввод и принимает ввод&lt;div&gt;&amp;nbsp;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="10" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="RY103PyDIlXr2Isy-sJU-2" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="375" y="10" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RY103PyDIlXr2Isy-sJU-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RY103PyDIlXr2Isy-sJU-3" target="RY103PyDIlXr2Isy-sJU-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RY103PyDIlXr2Isy-sJU-3" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.on-page_reference;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="410" y="100" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RY103PyDIlXr2Isy-sJU-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="RY103PyDIlXr2Isy-sJU-2" target="RY103PyDIlXr2Isy-sJU-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jPs7Ce32L97gk0aSj_Ma-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RY103PyDIlXr2Isy-sJU-5" target="RY103PyDIlXr2Isy-sJU-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RY103PyDIlXr2Isy-sJU-5" value="Призыв к дейсвию, принимаем ввод пользователя" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RY103PyDIlXr2Isy-sJU-7" value="&lt;a href=&quot;data:page/id,HTTH3PF9Bw6KzgU65LT8&quot;&gt;skanUser&lt;/a&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="370" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="HTTH3PF9Bw6KzgU65LT8" name="methods_skanUser">
+    <mxGraphModel dx="1358" dy="842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aw-AtJ1nxZi4UPanbtQE-1" target="aw-AtJ1nxZi4UPanbtQE-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-1" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="371.2" y="10" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-2" value="метод запрашивает у пользоваетля ввод.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;метод принимает ввод.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;метод отпровлет ввод на проверку в класс проверки.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;если класс проверки возвращает ошибку повторяем первые три дейсвия.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;если ввод верный, возвращаем ввод.&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry width="120" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aw-AtJ1nxZi4UPanbtQE-3" target="aw-AtJ1nxZi4UPanbtQE-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-3" value="str = &quot;&quot;&lt;div&gt;index = 0;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="361.2" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="aw-AtJ1nxZi4UPanbtQE-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="421.2" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="aw-AtJ1nxZi4UPanbtQE-5" target="aw-AtJ1nxZi4UPanbtQE-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="215" />
+              <mxPoint x="560" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-5" value="i = 1; i &amp;lt;= index;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="361.2" y="190" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-9" value="No" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="516.2" y="190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-10" value="Yes" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="406.2" y="250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aw-AtJ1nxZi4UPanbtQE-12" target="aw-AtJ1nxZi4UPanbtQE-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-12" value="Вывод:&lt;div&gt;&quot;Введите любое предложение&quot;&lt;br&gt;&quot;Осуствие ввода будет ошибкой&quot;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="293.7" y="290" width="255" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aw-AtJ1nxZi4UPanbtQE-13" target="aw-AtJ1nxZi4UPanbtQE-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-13" value="Ввод:&lt;div&gt;str =&amp;nbsp;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="358.7" y="380" width="125" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aw-AtJ1nxZi4UPanbtQE-15" target="aw-AtJ1nxZi4UPanbtQE-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-15" value="Вызов метода Класса проверки&amp;nbsp;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="361.2" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="aw-AtJ1nxZi4UPanbtQE-17" target="aw-AtJ1nxZi4UPanbtQE-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-17" value="index = Errors.errInputUser(str);" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="299.95" y="540" width="242.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aw-AtJ1nxZi4UPanbtQE-20" value="return str;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="358.7" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ECZ83mR5SnHDdNhE-nUb-1" value="Stop" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="368.7" y="720" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ECZ83mR5SnHDdNhE-nUb-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="aw-AtJ1nxZi4UPanbtQE-20" target="ECZ83mR5SnHDdNhE-nUb-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

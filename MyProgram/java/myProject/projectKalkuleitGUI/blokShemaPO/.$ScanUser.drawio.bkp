@@ -1,0 +1,70 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Страница-1" id="p77x3e15_KjmNI9JejiY">
+    <mxGraphModel dx="2208" dy="842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tRJu0E5DT9g9vG07TOBE-1" value="Принимаем ввод пользователя.&lt;br&gt;&lt;br&gt;&lt;div&gt;передаем ввод пользователя классу проверяющий коректность ввода&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Если класс Erros возвращает ошибку запрашиваем воод занаво&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Если ошибки нету перадем ввод пользователя в Main&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-120" width="120" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="gqe-G_1EAhS2oRkAFU3B-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tRJu0E5DT9g9vG07TOBE-2" target="gqe-G_1EAhS2oRkAFU3B-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tRJu0E5DT9g9vG07TOBE-2" value="start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="375" y="20" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gqe-G_1EAhS2oRkAFU3B-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gqe-G_1EAhS2oRkAFU3B-1" target="gqe-G_1EAhS2oRkAFU3B-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gqe-G_1EAhS2oRkAFU3B-1" value="printUser;&lt;div&gt;indexErr = 0;&lt;br&gt;&lt;div&gt;new error;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365.5" y="120" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="gqe-G_1EAhS2oRkAFU3B-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gqe-G_1EAhS2oRkAFU3B-2" target="gqe-G_1EAhS2oRkAFU3B-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gqe-G_1EAhS2oRkAFU3B-2" value="Вывод:&lt;div&gt;&quot;Введите что либо.&amp;nbsp;&lt;/div&gt;&lt;div&gt;Ввод обязателен.&lt;/div&gt;&lt;div&gt;Отсуствие ввода будет являться ошибкой&quot;&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="242" y="340" width="367" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gqe-G_1EAhS2oRkAFU3B-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gqe-G_1EAhS2oRkAFU3B-4" target="gqe-G_1EAhS2oRkAFU3B-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gqe-G_1EAhS2oRkAFU3B-4" value="&lt;div&gt;Ввод&lt;/div&gt;printUser =" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="375.5" y="460" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gqe-G_1EAhS2oRkAFU3B-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="gqe-G_1EAhS2oRkAFU3B-7" target="gqe-G_1EAhS2oRkAFU3B-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="302" y="560" />
+              <mxPoint x="302" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gqe-G_1EAhS2oRkAFU3B-7" value="indexErr = error.strCheck(printUser)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="322" y="540" width="207" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gqe-G_1EAhS2oRkAFU3B-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gqe-G_1EAhS2oRkAFU3B-7" target="gqe-G_1EAhS2oRkAFU3B-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gqe-G_1EAhS2oRkAFU3B-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gqe-G_1EAhS2oRkAFU3B-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="250.0344827586207" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gqe-G_1EAhS2oRkAFU3B-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gqe-G_1EAhS2oRkAFU3B-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425.7586206896551" y="340.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gqe-G_1EAhS2oRkAFU3B-13" value="i = 1; i &amp;lt;= indexErr;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="365.5" y="210" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gqe-G_1EAhS2oRkAFU3B-16" value="No" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gqe-G_1EAhS2oRkAFU3B-19" value="Yes" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="300" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
