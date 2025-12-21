@@ -1,6 +1,5 @@
-public class Main_1_2 {
-    
+public class MainTest {
     public static void main(String[] args) {
-        
+
     }
 }

@@ -61,10 +61,10 @@ public class MyMainList1_1 {
 //                .skip(3)
 //                .forEach(System.out::println);
 
-        list.stream() // Отсортировать книги по количеству страниц (Не забывайте про условия для сравнения объектов)
-                .skip(3)
-                .sorted(Comparator.comparingInt(Book::))
-                .forEach(System.out::println);
+//        list.stream() // Отсортировать книги по количеству страниц (Не забывайте про условия для сравнения объектов)
+//                .skip(3)
+//                .sorted(Comparator.comparingInt(Book::))
+//                .forEach(System.out::println);
 
 //        list.stream() // Оставить только уникальные книги
 //                .skip(3)

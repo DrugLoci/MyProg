@@ -2,14 +2,17 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Text Redactor ot GoroHovSoft");
-        frame.setBounds(100, 100, 500, 500);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JWindow window = new JWindow();
+        window.
 
-        JButton button = new JButton();
-        button.setText("Click me!");
-        
-
-        frame.setVisible(true);
+//        JFrame frame = new JFrame("Text Redactor ot GoroHovSoft");
+//        frame.setBounds(100, 100, 500, 500);
+//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//
+//        JButton button = new JButton();
+//        button.setText("Click me!");
+//
+//
+//        frame.setVisible(true);
     }
 }
