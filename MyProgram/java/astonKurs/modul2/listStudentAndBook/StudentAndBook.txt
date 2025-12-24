@@ -1,0 +1,8 @@
+Name: Anton
+Name: Mike
+Name: Kate
+Book Java pages 300 yer 2015
+Book C++ pages 200 yer 2016
+Book C# pages 100 yer 2017
+Book Python pages 500 yer 2018
+Book C pages 400 yer 1998
