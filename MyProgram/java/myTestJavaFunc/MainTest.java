@@ -1,7 +1,9 @@
+import java.nio.charset.StandardCharsets;
+
 public class MainTest {
     public static void main(String[] args) {
-        String test = "Hello World 123";
-        boolean test2 = test.matches("\\w+\\s*");
-        System.out.println(test2);
+        String test = "Hello";
+        String test2 = " Word!";
+        System.out.println(test.indexOf("l"));
     }
 }
