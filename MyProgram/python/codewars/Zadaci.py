@@ -253,4 +253,47 @@ def razdelyiIVlasvui():
 #     print(numberUser, numberUser * 2, numberUser * 3, numberUser * 4, numberUser *5, sep="---")
 # razdelyiIVlasvui()
 
-print(23 // 7, 20 // 5, 2 // 5, 123 // 10, -123 // 10)
+#Геометрической прогрессией называется последовательность чисел
+def geometricheskayaProgres():
+    numbersUser = [int(input()), int(input()), int(input())]
+    print(numbersUser[0] * (numbersUser[1]**(numbersUser[2] - 1)))
+#geometricheskayaProgres()
+
+#Напишите программу, которая находит полное число метров по заданному числу сантиметров.
+def izSantimetrovVMetri():
+    userSm = int(input())
+    print(userSm // 100)
+#izSantimetrovVMetri()
+
+#n школьников делят k мандаринов поровну, неделящийся остаток остается в корзине.
+# Сколько целых мандаринов достанется каждому школьнику? Сколько целых мандаринов останется в корзине?
+def delimMandarin():
+    numbersUser = [int(input()), int(input())]
+    print(numbersUser[1] // numbersUser[0], numbersUser[1] % numbersUser[0], sep="\n")
+
+#Безумный титан Танос собрал все 6 камней бесконечности и намеревается уничтожить половину населения Вселенной по щелчку пальцев.
+# При этом если население Вселенной является нечетным числом, то титан проявит милосердие и округлит количество выживших в большую сторону.
+# Помогите Мстителям подсчитать количество выживших.
+def tanos():
+    numUser = int(input())
+    if numUser % 2 == 0:
+        print(numUser // 2)
+    else:
+        print(numUser // 2 + 1)
+#tanos()
+
+#Напишите программу для пересчёта величины временного интервала, заданного в минутах, в величину, выраженную в часах и минутах в следующем формате
+def vivodTime():
+    timeMinutUser = int(input())
+    print(f"{timeMinutUser} мин - это {timeMinutUser // 60} час {timeMinutUser - (60 * (timeMinutUser // 60)) } минут.")
+#vivodTime()
+
+#В купейном вагоне имеется 9 купе с четырьмя местами для пассажиров в каждом. Напишите программу,
+# которая определяет номер купе, в котором находится место с заданным номером (нумерация мест сквозная, начинается с 1).
+def nomerCupe():
+    numUser = int(input())
+    if numUser % 4 == 0:
+        print(int(numUser / 4))
+    else:
+        print(numUser // 4 + 1)
+#nomerCupe()
