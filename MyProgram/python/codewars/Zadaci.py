@@ -297,3 +297,61 @@ def nomerCupe():
     else:
         print(numUser // 4 + 1)
 #nomerCupe()
+
+#Напишите программу, которая рассчитывает сумму и произведение цифр положительного трёхзначного числа и выводит текст в следующем формате
+def trehznachnoeChislo():
+    numUser = int(input())
+    num1 = numUser // 100
+    num2 = (numUser // 10) % 10
+    num3 = numUser % 10
+    print(f"Сумма цифр = {num1 + num2 + num3}\nПроизведение цифр = {num1 * num2 * num3}")
+#trehznachnoeChislo()
+
+#Дано трехзначное число abc, в котором все цифры различны. Напишите программу, которая выводит шесть чисел, образованных при перестановке цифр заданного числа.
+def menyaemMestamiCifri():
+    numUser = int(input())
+    num1 = numUser // 100
+    num2 = (numUser // 10) % 10
+    num3 = numUser % 10
+    print(numUser)
+    print(num1, num3, num2, sep="")
+    print(num2, num1, num3, sep="")
+    print(num2, num3, num1, sep="")
+    print(num3, num1, num2, sep="")
+    print(num3, num2, num1, sep="")
+#menyaemMestamiCifri()
+
+#Напишите программу для нахождения цифр четырёхзначного числа.
+def nahodimCifri():
+    numUser = int(input())
+    num1 = numUser // 1000
+    num2 = (numUser // 100) % 10
+    num3 = (numUser // 10) % 10
+    num4 = numUser % 10
+    print(f"Цифра в позиции тысяч равна {num1}\nЦифра в позиции сотен равна {num2}\nЦифра в позиции десятков равна {num3}\nЦифра в позиции единиц равна {num4}")
+#nahodimCifri()
+
+#Звёздный прямоугольник Напишите программу, которая выводит прямоугольник, по периметру состоящий из звёздочек (*)
+def kvadratZvezydi():
+    print("*" * 17, "*        *", "*        *", "*" * 17, sep="\n")
+#kvadratZvezydi()
+
+#Напишите программу, которая считывает два целых числа a и b и выводит на экран квадрат суммы (a+b)**2 и сумму квадратов a**2 + b**2.
+def kvadratSumma():
+    numbersUser = [int(input()), int(input())]
+    print(f"Квадрат суммы {numbersUser[0]} и {numbersUser[1]} равен {(numbersUser[0] + numbersUser[1]) ** 2}\nСумма квадратов {numbersUser[0]}"
+          f" и {numbersUser[1]} равна {numbersUser[0] ** 2 + numbersUser[1] ** 2}", sep="\n")
+#kvadratSumma()
+
+#Как известно, целые числа в языке Python не имеют ограничений, которые встречаются в других языках программирования. Напишите программу,
+# которая считывает четыре целых положительных числа a,b,c и d и выводит на экран значение выражения a**b + c**d.
+def bigNumber():
+    userNumbers = [int(input()), int(input()), int(input()), int(input())]
+    print(userNumbers[0]**userNumbers[1] + userNumbers[2]**userNumbers[3])
+#bigNumber()
+
+#Напишите программу, которая считывает натуральное число и выводит значение следующего выражения: n + n**n + n**n**n
+def razmnojenie():
+    userNum = input()
+    print(int(userNum) + int(f"{userNum}{userNum}") + int(f"{userNum}{userNum}{userNum}"))
+#razmnojenie()
