@@ -355,3 +355,12 @@ def razmnojenie():
     userNum = input()
     print(int(userNum) + int(f"{userNum}{userNum}") + int(f"{userNum}{userNum}{userNum}"))
 #razmnojenie()
+
+#Напишите программу, которая сравнивает пароль и его подтверждение. Если они совпадают,
+# то программа выводит текст «Пароль принят» (без кавычек), иначе – «Пароль не принят» (без кавычек).
+def parol():
+    if input() == input():
+        print("Пароль принят")
+    else:
+        print("Пароль не принят")
+# parol()
