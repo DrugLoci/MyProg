@@ -70,7 +70,6 @@ def invert(lst):
 #Рассмотрим массив/список овец, в котором некоторые овцы могут отсутствовать.
 #Нам нужна функция, которая подсчитывает количество овец в массиве (true означает наличие).
 def count_sheeps(sheep):
-  # TODO May the force be with you
     number = 0
     for sheep in sheep:
         if sheep == True:
@@ -373,12 +372,34 @@ def chetNeChet():
         print("Нечетное")
 #chetNeChet()
 
+#Напишите программу, которая определяет, разрешён ли пользователю доступ к интернет-ресурсу или нет.
+def internet():
+    if int(input()) >= 18:
+        print("Доступ разрешен")
+    else:
+        print("Доступ запрещен")
+#internet()
 
+# Напишите программу, которая определяет наименьшее из двух чисел.
+def minNumber():
+    numbersUser = [int(input()), int(input())]
+    if numbersUser[0] < numbersUser[1]:
+        print(numbersUser[0])
+    else:
+        print(numbersUser[1])
+#minNumber()
 
-
-
-
-
+#Напишите программу, которая определяет, являются ли три заданных числа (в указанном порядке) последовательными членами арифметической прогрессии.
+def posledovatelnost():
+    numbersUser = [int(input()), int(input()), int(input())]
+    if numbersUser[0] + 1 == numbersUser[1]:
+        if numbersUser[1] + 1 == numbersUser[2]:
+            print("YES")
+        else:
+            print("NO")
+    else:
+        print("NO")
+#posledovatelnost()
 
 
 
