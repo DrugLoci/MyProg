@@ -399,13 +399,61 @@ def posledovatelnost():
             print("NO")
     else:
         print("NO")
-#posledovatelnost()
 
+def posledovatelnost1():
+    numbersUser = [int(input()), int(input()), int(input())]
+    raznica = numbersUser[1] - numbersUser[0]
+    if numbersUser[2] - numbersUser[1] == raznica:
+        print("YES")
+    else:
+        print("NO")
+#posledovatelnost1()
 
+#Напишите программу, которая проверяет, что для заданного четырехзначного числа выполняется следующее соотношение:
+# сумма первой и последней цифр равна разности второй и третьей цифр.
+def sootnoshenie():
+    numUser = int(input())
+    num1 = numUser // 1000
+    num2 = (numUser // 100) % 10
+    num3 = (numUser // 10) % 10
+    num4 = numUser % 10
+    if num1 + num4 == num2 - num3:
+        print("ДА")
+    else:
+        print("НЕТ")
+#sootnoshenie()
 
+#Напишите программу, которая считывает три числа и подсчитывает сумму только положительных чисел.
+def tolkoPolojitelnoe():
+    numbersUser = [int(input()), int(input()), int(input())]
+    summa = 0
+    for numUser in numbersUser:
+        if numUser >= 0:
+           summa = summa + numUser
+    print(summa)
+#tolkoPolojitelnoe()
 
+#Напишите программу, которая по введённому возрасту пользователя сообщает, к какой возрастной группе он относится
+def vozrast():
+    vozrasUser = int(input())
+    if vozrasUser <= 13:
+        print("детство")
+    elif 14 <= vozrasUser <= 24:
+        print("молодость")
+    elif 25 <= vozrasUser <= 59:
+        print("зрелость")
+    else:
+        print("старость")
+#vozrast()
 
-
+#Напишите программу, которая определяет наименьшее из четырёх чисел.
+def minNumber4():
+    numbersUser = [int(input()), int(input()), int(input()), int(input())]
+    print(min(numbersUser))
+#minNumber4()
+def minNumber4_1():
+    print(min([int(input()), int(input()), int(input()), int(input())]))
+minNumber4_1()
 
 
 
