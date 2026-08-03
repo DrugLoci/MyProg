@@ -453,14 +453,31 @@ def minNumber4():
 #minNumber4()
 def minNumber4_1():
     print(min([int(input()), int(input()), int(input()), int(input())]))
-minNumber4_1()
+#minNumber4_1()
 
+#Напишите программу, которая принимает целое число
+# x и определяет, принадлежит ли данное число указанному промежутку. промежуток -1 - 17
+def promejutok():
+    numUser = int(input())
+    if numUser >= -1 and numUser <= 17:
+        print("Принадлежит")
+    else:
+        print("Не принадлежит")
+#promejutok()
 
+#Напишите программу, которая принимает целое число
+# x и определяет, принадлежит ли данное число указанным промежуткам. промежутки -3 < и > 7
+def promejutok1():
+    numUser = int(input())
+    if numUser <= -3 or numUser >= 7:
+        print("Принадлежит")
+    else:
+        print("Не принадлежит")
+#promejutok1()
 
-
-
-
-
+#Напишите программу, которая принимает целое число
+# x и определяет, принадлежит ли данное число указанным промежуткам.
+def promejutok2():
 
 
 

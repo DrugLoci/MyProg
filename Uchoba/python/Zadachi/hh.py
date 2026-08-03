@@ -38,7 +38,6 @@ class Student:
 
         passed = [name for name, score in valid_records if score >= 60]
         passed.sort()
-
         return {
             "valid_count": valid_count,
             "average": average,
@@ -47,15 +46,12 @@ class Student:
         }
 
     def run(self):
-
         records = self.readFile()
 
         if not records:
             print("Нет данных для обработки")
             return None
-
         result = self.process_grades(records)
-
         print("Результат обработки:")
         print(f"Всего записей: {len(records)}")
         print(f"Валидных записей: {result['valid_count']}")
