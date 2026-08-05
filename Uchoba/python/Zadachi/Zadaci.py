@@ -507,6 +507,14 @@ def neravenctvo():
         print("NO")
 #neravenctvo()
 
+#Напишите программу, которая определяет, является ли год с данным номером високосным.
+def vesokosniy():
+    numUser = int(input())
+    if numUser % 4 == 0 and numUser % 100 != 0 or numUser % 400 == 0:
+        print("YES")
+    else:
+        print("NO")
+#vesokosniy()
 
 
 
