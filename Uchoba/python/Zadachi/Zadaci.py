@@ -476,11 +476,36 @@ def promejutok1():
 #promejutok1()
 
 #Напишите программу, которая принимает целое число
-# x и определяет, принадлежит ли данное число указанным промежуткам.
+# x и определяет, принадлежит ли данное число указанным промежуткам. -30 -2 и 7 25
 def promejutok2():
+    numUser = int(input())
+    if (numUser >= -30 and numUser <= -2) or (numUser >= 7 and numUser <= 25):
+        print("Принадлежит")
+    else:
+        print("Не принадлежит")
+#promejutok2()
 
+#Назовём число красивым, если оно является четырёхзначным и делится нацело на 7 или на 17
+def krasivieChisla():
+    vvodUser = int(input())
+    if len(str(vvodUser)) == 4:
+        if vvodUser % 7 == 0 or vvodUser % 17 == 0:
+            print("YES")
+        else:
+            print("NO")
+    else:
+        print("NO")
+#krasivieChisla()
 
-
+#Напишите программу, которая принимает три положительных числа и определяет,
+# существует ли невырожденный треугольник с такими сторонами.
+def neravenctvo():
+    numUser = [int(input()), int(input()), int(input())]
+    if (numUser[0] + numUser[1]) > numUser[2] and (numUser[0] + numUser[2]) > numUser[1] and (numUser[1] + numUser[2]) > numUser[0]:
+        print("YES")
+    else:
+        print("NO")
+#neravenctvo()
 
 
 
