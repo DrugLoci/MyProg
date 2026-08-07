@@ -1,5 +1,8 @@
 #Напишите функцию, которая разбивает строку и преобразует ее в массив слов.
 from numbers import Number
+from time import process_time_ns
+
+
 def string_to_array(s):
     # your code here
     if s == "":
@@ -516,8 +519,20 @@ def vesokosniy():
         print("NO")
 #vesokosniy()
 
+#Даны две различные клетки шахматной доски.
+# Напишите программу, которая определяет, может ли ладья попасть с первой клетки на вторую одним ходом.
+def hodLadi():
+    polojenie = [int(input()), int(input())]
+    peremeshenie = [int(input()), int(input())]
+    if peremeshenie[0] == polojenie[0] or peremeshenie[1] == polojenie[1]:
+        if peremeshenie[0] <= 8 and peremeshenie[1] <= 8:
+            print("YES")
+        else:
+            print("NO")
+    else:
+        print("NO")
+#hodLadi()
 
-
-
-
+#Даны две различные клетки шахматной доски. Напишите программу, которая определяет,
+# может ли король попасть с первой клетки на вторую одним ходом.
 
