@@ -1,8 +1,6 @@
 #Напишите функцию, которая разбивает строку и преобразует ее в массив слов.
 from numbers import Number
 from time import process_time_ns
-
-
 def string_to_array(s):
     # your code here
     if s == "":
@@ -535,4 +533,166 @@ def hodLadi():
 
 #Даны две различные клетки шахматной доски. Напишите программу, которая определяет,
 # может ли король попасть с первой клетки на вторую одним ходом.
+def hodKorol():
+    polojenie = [int(input()), int(input())]
+    peremeshenie = [int(input()), int(input())]
+    if (peremeshenie[0] == polojenie[0] + 1 or peremeshenie[0] == polojenie[0] - 1) or (peremeshenie[1] == polojenie[1] + 1 or peremeshenie[1] == polojenie[1] - 1):
+        if peremeshenie[0] <= 8 and peremeshenie[1] <= 8:
+            print("YES")
+        else:
+            print("NO")
+    else:
+        print("NO")
+#hodKorol() # короче в степике на 32-ом тесте какая-то ошибка, степик не показывает какие данные вводились и вообще что там за тест был, по этому хз
 
+#Зум бросил вызов Флэшу и предложил ему честный поединок в виде гонки вокруг магнетара.
+#В случае проигрыша эта нейтронная звезда зарядится и уничтожит мир, поэтому Флэш решил не рисковать без причины и узнать у своего друга Циско Рамона, есть ли смысл принимать вызов.
+#Циско получил данные, что скорость Зума равна n, а скорость Флэша равна k
+#Напишите программу, которая должна вывести ответ Циско на вопрос Флэша.
+def poedinok():
+    speed = [int(input()), int(input())]
+    if speed[0] <= speed[1]:
+        if speed[0] == speed[1]:
+            print("Don't know")
+        else:
+            print("YES")
+    else:
+        print("NO")
+#poedinok()
+
+#Напишите программу, которая классифицирует треугольник на основе длин его сторон.
+# Программа должна принимать три числа, каждое из которых представляет собой длину одной из его сторон.
+# В результате программа должна определить, является ли треугольник равносторонним, равнобедренным или разносторонним.
+def triugolnik():
+    size = [int(input()), int(input()), int(input())]
+    if size[0] == size[1] == size[2]:
+        print("Равносторонний")
+    elif size[0] == size[1] or size[0] == size[2] or size[1] == size[2]:
+        print("Равнобедренный")
+    else:
+        print("Разносторонний")
+#triugolnik()
+
+#Даны три различных целых числа. Напишите программу, которая находит серединное значение из этих чисел.
+def seredina():
+    numUser = [int(input()), int(input()), int(input())]
+    print(sorted(numUser)[1])
+#seredina()
+
+#Дан порядковый номер месяца (1,2,…,12). Напишите программу, которая выводит на экран количество дней в этом месяце. Принять, что год является невисокосным.
+def kolvoDnei():
+    numUser = int(input())
+    days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    print(days[numUser - 1])
+#kolvoDnei()
+
+#Известен вес боксёра-любителя (целое число). Известно, что вес таков, что боксер может быть отнесён к одной из трёх весовых
+#Напишите программу, определяющую, в какой категории будет выступать данный боксёр.
+def vesBoksera():
+    numUser = int(input())
+    if numUser < 60:
+        print("Легкий вес")
+    elif 60 <= numUser < 64:
+        print("Первый полусредний вес")
+    else:
+        print("Полусредний вес")
+#vesBoksera()
+
+#Напишите программу, которая считывает с клавиатуры два целых числа и строку.
+# Если эта строка является обозначением одной из четырёх математических операций (+, -, *, /), то выведите результат применения этой операции к введённым ранее числам,
+# в противном случае выведите «Неверная операция» (без кавычек).
+# Если пользователь захочет поделить на ноль, выведите текст «На ноль делить нельзя!» (без кавычек).
+def kalkulator():
+    numUser = [int(input()), int(input())]
+    operation = input()
+    if not operation in ["+", "-", "*", "/"]:
+        print("Неверная операция")
+        raise SystemExit
+    if numUser[0] == 0 or numUser[1] == 0:
+        if operation == "/":
+            print("На ноль делить нельзя!")
+            raise SystemExit
+    if operation == "+":
+        print(numUser[0] + numUser[1])
+    elif operation == "-":
+        print(numUser[0] - numUser[1])
+    elif operation == "*":
+        print(numUser[0] * numUser[1])
+    else:
+        print(numUser[0] / numUser[1])
+#kalkulator()
+
+#Напишите программу, которая считывает названия двух основных цветов для смешивания.
+# Если пользователь вводит что-нибудь помимо названий «красный», «синий» или «желтый», то программа должна вывести сообщение об ошибке.
+# В противном случае программа должна вывести название вторичного цвета, который получится в результате.
+def palitra():
+    vvodUser = [input(), input()]
+    if vvodUser[0] == "красный" and vvodUser[1] == "синий":
+        print("фиолетовый")
+    elif vvodUser[0] == "красный" and vvodUser[1] == "желтый":
+        print("оранжевый")
+    elif vvodUser[0] == "красный" and vvodUser[1] == "красный":
+        print("красный")
+    elif vvodUser[0] == "синий" and vvodUser[1] == "красный":
+        print("фиолетовый")
+    elif vvodUser[0] == "синий" and vvodUser[1] == "желтый":
+        print("зеленый")
+    elif vvodUser[0] == "синий" and vvodUser[1] == "синий":
+        print("синий")
+    elif vvodUser[0] == "желтый" and vvodUser[1] == "красный":
+        print("оранжевый")
+    elif vvodUser[0] == "желтый" and vvodUser[1] == "синий":
+        print("зеленый")
+    elif vvodUser[0] == "желтый" and vvodUser[1] == "желтый":
+        print("желтый")
+    else:
+        print("ошибка цвета")
+#palitra()
+
+#На колесе рулетки карманы пронумерованы от 0 до 36.
+#Напишите программу, которая считывает номер кармана и показывает, является ли этот карман зеленым, красным или черным.
+#Программа должна вывести сообщение об ошибке, если пользователь вводит число, которое лежит вне диапазона от 0 до 36.
+def ruletka():
+    numUser = int(input())
+    if numUser == 0:
+        print("зеленый")
+    elif 1 <= numUser <= 10:
+        if numUser % 2 == 0:
+            print("черный")
+        else:
+            print("красный")
+    elif 11 <= numUser <= 18:
+        if numUser % 2 == 0:
+            print("красный")
+        else:
+            print("черный")
+    elif 19 <= numUser <= 28:
+        if numUser % 2 == 0:
+            print("черный")
+        else:
+            print("красный")
+    elif 29 <= numUser <= 36:
+        if numUser % 2 == 0:
+            print("красный")
+        else:
+            print("черный")
+    else:
+        print("ошибка ввода")
+#ruletka()
+
+#На числовой прямой даны два отрезка:[a1;b1] и [a2;b2]. Напишите программу, которая находит их пересечение.
+def peressechenie():
+    numUser = [[int(input()), int(input())], [int(input()), int(input())]]
+    if numUser[0][1] > numUser[1][0]:
+        print(numUser[1][0], numUser[0][1])
+    elif numUser[0][0] < numUser[1][1]:
+        print(numUser[0][0], numUser[1][1])
+    elif numUser[0][1] == numUser[1][0]:
+        print(numUser[0][1])
+    elif numUser[0][0] == numUser[1][1]:
+        print(numUser[0][0])
+    elif numUser[0][1] < numUser[1][0]:
+        print("пустое множество")
+    elif numUser[0][0] > numUser[1][1]:
+        print("пустое множество")
+peressechenie()
