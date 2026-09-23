@@ -682,17 +682,197 @@ def ruletka():
 
 #На числовой прямой даны два отрезка:[a1;b1] и [a2;b2]. Напишите программу, которая находит их пересечение.
 def peressechenie():
+    numUser = [[int(input()), int(input())]], [[int(input()), int(input())]]
+    if numUser[1][0] < numUser[0][0]:
+        if numUser[1][1] < numUser[0][0]:
+            print('пустое множество')
+        elif numUser[1][1] == numUser[0][0]:
+            print(numUser[1][1])
+        elif numUser[0][0] < numUser[1][1] <= numUser[0][1]:
+            print(numUser[0][0], numUser[1][1])
+        elif numUser[1][1] > numUser[0][1]:
+            print(numUser[0][0], numUser[0][1])
+    elif numUser[1][0] == numUser[0][0]:
+        if numUser[1][1] <= numUser[0][1]:
+            print(numUser[1][0], numUser[1][1])
+        else:
+            print(numUser[1][0], numUser[0][1])
+    elif numUser[1][0] < numUser[0][1]:
+        if numUser[1][1] <= numUser[0][1]:
+            print(numUser[1][0], numUser[1][1])
+        else:
+            print(numUser[1][0], numUser[0][1])
+    elif numUser[1][0] == numUser[0][1]:
+        print(numUser[1][0])
+    else:
+        print('пустое множество')
+#peressechenie()
+
+#Напишите программу, которая определяет, оканчивается ли год с данным номером на два нуля.
+# Если год оканчивается, то выведите «YES» (без кавычек), иначе выведите «NO» (без кавычек).
+def dvaNula():
+    numUser = int(input())
+    num1 = (numUser // 10) % 10
+    num2 = numUser % 10
+    if num1 == 0 and num2 == 0:
+        print("YES")
+    else:
+        print("NO")
+#dvaNula()
+
+#Заданы две клетки шахматной доски. Напишите программу, которая определяет, имеют ли указанные клетки один цвет или нет.
+#Если они покрашены в один цвет, то выведите слово «YES» (без кавычек), а если в разные цвета, то «NO» (без кавычек).
+def odinColor():
     numUser = [[int(input()), int(input())], [int(input()), int(input())]]
-    if numUser[0][1] > numUser[1][0]:
-        print(numUser[1][0], numUser[0][1])
-    elif numUser[0][0] < numUser[1][1]:
-        print(numUser[0][0], numUser[1][1])
-    elif numUser[0][1] == numUser[1][0]:
-        print(numUser[0][1])
-    elif numUser[0][0] == numUser[1][1]:
-        print(numUser[0][0])
-    elif numUser[0][1] < numUser[1][0]:
-        print("пустое множество")
-    elif numUser[0][0] > numUser[1][1]:
-        print("пустое множество")
-peressechenie()
+    if numUser[0][0] == numUser[0][1]:
+        color0 = True
+    elif numUser[0][0] % 2 == 0 and numUser[0][1] % 2 == 0 or numUser[0][0] % 2 != 0 and numUser[0][1] % 2 != 0:
+        color0 = True
+    else:
+        color0 = False
+
+    if numUser[1][0] == numUser[1][1]:
+        color1 = True
+    elif numUser[1][0] % 2 == 0 and numUser[1][1] % 2 == 0 or numUser[1][0] % 2 != 0 and numUser[1][1] % 2 != 0:
+        color1 = True
+    else:
+        color1 = False
+
+    if color0 == color1:
+        print("YES")
+    else:
+        print("NO")
+#odinColor()
+
+#Футбольная команда набирает девочек от 10 до 15 лет включительно.
+#Напишите программу, которая запрашивает возраст и пол претендента, используя для обозначения пола буквы «m» (от male – мужчина)
+#и «f» (от female – женщина), и определяет, подходит ли претендент для вступления в команду или нет.
+#Если претендент подходит, то выведите «YES» (без кавычек), иначе выведите «NO» (без кавычек).
+def podborFutbolistov():
+    numUser = [int(input()), input()]
+    if numUser[0] >= 10 and numUser[0] <= 15:
+        if numUser[1] == "f":
+            print("YES")
+        else:
+            print("NO")
+    else:
+        print("NO")
+#podborFutbolistov()
+
+#Напишите программу, которая считывает целое число и выводит соответствующую ему римскую цифру.
+# Если число находится вне диапазона [1;10], то программа должна вывести текст «ошибка» (без кавычек).
+def romskieCifri():
+    numUser = int(input())
+    if numUser == 1:
+        print("I")
+    elif numUser == 2:
+        print("II")
+    elif numUser == 3:
+        print("III")
+    elif numUser == 4:
+        print("IV")
+    elif numUser == 5:
+        print("V")
+    elif numUser == 6:
+        print("VI")
+    elif numUser == 7:
+        print("VII")
+    elif numUser == 8:
+        print("VIII")
+    elif numUser == 9:
+        print("IX")
+    elif numUser == 10:
+        print("X")
+    else:
+        print("ошибка")
+#romskieCifri()
+
+# Напишите программу, которая принимает на вход число и в зависимости от условий выводит текст «YES» (без кавычек) либо «NO» (без кавычек).
+#
+# Условия:
+#
+# если число нечётное, то вывести «YES»;
+# если число чётное в диапазоне от 2 до 5 (включительно), то вывести «NO»;
+# если число чётное в диапазоне от 6 до 20 (включительно), то вывести «YES»;
+# если число чётное и больше 20, то вывести «NO».
+def chetNechet():
+    numUser = int(input())
+    if numUser % 2 != 0:
+        print("YES")
+    elif 2 <= numUser <= 5:
+        print("NO")
+    elif 6 <= numUser <= 20:
+        print("YES")
+    else:
+        print("NO")
+#chetNechet()
+
+#Даны две различные клетки шахматной доски. Напишите программу, которая определяет, может ли слон попасть с первой клетки на вторую одним ходом.
+# Программа получает на вход четыре числа от 1 до 8 каждое, задающие номер столбца и номер строки сначала для первой клетки, потом для второй клетки.
+# Программа должна вывести «YES», если из первой клетки ходом слона можно попасть во вторую, или «NO» в противном случае.
+def hodSlon_0_1():
+    numUser = [[int(input()), int(input())], [int(input()), int(input())]]
+    if numUser[0][0] != numUser[1][0] and numUser[0][1] != numUser[1][1] and \
+            abs(numUser[0][0] - numUser[1][0]) == abs(numUser[0][1] - numUser[1][1]): # проверка на то, что клетки будущего хода не на одном векторе и слон ходит по свои веткорам
+        if numUser[0][0] == numUser[0][1] or numUser[0][0] % 2 == 0 and numUser[0][1] % 2 == 0 or \
+                numUser[0][0] % 2 != 0 and numUser[0][1] % 2 != 0: # узнаем изначальный цвет клетки если true то белая иначе черная, белая идет на белую и наоборот
+            if numUser[1][0] == numUser[1][1] or numUser[1][0] % 2 == 0 and numUser[1][1] % 2 == 0 or \
+                    numUser[1][0] % 2 != 0 and numUser[1][1] % 2 != 0: # проверка на то, что конечная клетка тоже белая
+                print("YES")
+            else:
+                print("NO")
+        elif numUser[0][0] == numUser[0][1] or numUser[0][0] % 2 == 0 and numUser[0][1] % 2 == 0 or \
+                numUser[0][0] % 2 != 0 and numUser[0][1] % 2 != 0: # проверяем что бы начальная клетка была черная
+            if numUser[1][0] == numUser[1][1] or numUser[1][0] % 2 == 0 and numUser[1][1] % 2 == 0 or \
+                    numUser[1][0] % 2 != 0 and numUser[1][1] % 2 != 0: # проверка на то, что конечная клетка тоже черная
+                print("YES")
+            else:
+                print("NO")
+    else:
+        print("NO")
+    # по итогу я запутал сам себя и сделал 2 функции, 1-ая моё решение, но не до конца верное, и второе решение ИИ. Можно было переписать самому, но это тест на время по этому помогаю себе. =)
+#hodSlon_0_1()
+def hodSlon_0_2_ai():
+    numUser = [[int(input()), int(input())], [int(input()), int(input())]]
+    if numUser[0][0] != numUser[1][0] and numUser[0][1] != numUser[1][1] and \
+            abs(numUser[0][0] - numUser[1][0]) == abs(numUser[0][1] - numUser[1][1]): # проверка: клетки не на одном векторе и слон ходит по своей диагонали
+        if (numUser[0][0] + numUser[0][1]) % 2 == 0: # начальная клетка светлая
+            if (numUser[1][0] + numUser[1][1]) % 2 == 0: # конечная клетка тоже светлая
+                print("YES")
+            else:
+                print("NO")
+        else: # начальная клетка тёмная
+            if (numUser[1][0] + numUser[1][1]) % 2 != 0: # конечная клетка тоже тёмная
+                print("YES")
+            else:
+                print("NO")
+    else:
+        print("NO")
+    # у меня был переизбыток проверок цвета клеток, именно это меня и подвело, я ловил себя на мысле что возможно стоит сделать проще, но решил не менять стиль подхода. =)
+#hodSlon_0_2_ai()
+
+#Даны две различные клетки шахматной доски. Напишите программу, которая определяет, может ли конь попасть с первой клетки на вторую одним ходом.
+# Программа получает на вход четыре числа от 1 до 8 каждое, задающие номер столбца и номер строки сначала для первой клетки, потом для второй клетки.
+# Программа должна вывести «YES», если из первой клетки ходом коня можно попасть во вторую, или «NO» в противном случае.
+def hodKon():
+    numUser = [[int(input()), int(input())], [int(input()), int(input())]]
+    dx = abs(numUser[0][0] - numUser[1][0]) # Разница по столбцу (по модулю)
+    dy = abs(numUser[0][1] - numUser[1][1]) # # Разница по строке (по модулю)
+    if (dx == 2 and dy == 1) or (dx == 1 and dy == 2):  # проверка хода коня: 2+1 или 1+2
+        print("YES")  # ход возможен
+    else:
+        print("NO")  # ход невозможен
+#hodKon()
+
+# Даны две различные клетки шахматной доски. Напишите программу, которая определяет, может ли ферзь попасть с первой клетки на вторую одним ходом.
+# Программа получает на вход четыре числа от 1 до 8 каждое, задающие номер столбца и номер строки сначала для первой клетки, потом для второй клетки.
+# Программа должна вывести «YES», если из первой клетки ходом ферзя можно попасть во вторую, или «NO» в противном случае.
+def hodFerz():
+    numUser = [[int(input()), int(input())], [int(input()), int(input())]]
+    # Проверяем все три возможных направления хода ферзя
+    if numUser[0][0] == numUser[1][0] or numUser[0][1] == numUser[1][1] or \
+            abs(numUser[0][0] - numUser[1][0]) == abs(numUser[0][1] - numUser[1][1]):# Если хотя бы одно условие выполнено — ферзь может попасть одним ходом
+        print("YES")
+    else:
+        print("NO")
+#hodFerz()
