@@ -1,4 +1,6 @@
 #Напишите функцию, которая разбивает строку и преобразует ее в массив слов.
+import math
+import sys
 from numbers import Number
 from time import process_time_ns
 def string_to_array(s):
@@ -876,3 +878,35 @@ def hodFerz():
     else:
         print("NO")
 #hodFerz()
+
+#Напишите программу, которая считывает одну строку, после чего выводит «YES» (без кавычек), если во введённой строке есть подстрока «суббота» или «воскресенье», или «NO» (без кавычек) в противном случае.
+def denNedeli():
+    vvodUser = input()
+    if "суббота" in vvodUser or "воскресенье" in vvodUser:
+        print("YES")
+    else:
+        print("NO")
+#denNedeli()
+
+#Напишите программу, определяющую площадь круга и длину окружности по заданному радиусу R
+def plochadDlina():
+    numUser = float(input())
+    print(math.pi * numUser**2, 2 * math.pi * numUser, sep="\n")
+#plochadDlina()
+
+#Напишите программу, которая принимает на вход действительное число x и вычисляет по нему значение: x + x
+#Примечание: х - пол числа (округление x до ближайшего целого в меньшую сторону), x потолок числа (округление x до ближайшего целого в большую сторону).
+def summaOdnogo():
+    numUser = float(input())
+    print(math.floor(numUser) + math.ceil(numUser))
+#summaOdnogo()
+
+#Напишите программу, определяющую евклидово расстояние между двумя точками, координаты которых заданы.
+def evklidovoNum():
+    numUser = [(float(input()), float(input())), (float(input()), float(input()))]
+    print(math.sqrt((numUser[0][0] - numUser[1][0])**2 + (numUser[0][1] - numUser[1][1])**2))
+#evklidovoNum()
+
+#Напишите программу, вычисляющую значение тригонометрического выражения sinx+cosx+tg**2x
+def triganometrya():
+    numUser = float(input())
