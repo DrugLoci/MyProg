@@ -909,4 +909,43 @@ def evklidovoNum():
 
 #Напишите программу, вычисляющую значение тригонометрического выражения sinx+cosx+tg**2x
 def triganometrya():
-    numUser = float(input())
+    numUser = math.radians(float(input()))
+    print(math.sin(numUser) + math.cos(numUser) + math.tan(numUser)**2)
+#triganometrya()
+
+#Правильный многоугольник — выпуклый многоугольник, у которого равны все стороны и все углы между смежными сторонами.
+#Площадь правильного многоугольника с длиной стороны s = (n*s**2)/(4*tan(π/n))
+def plochadPravilnogo():
+    numUser = [int(input()), float(input())]
+    print((numUser[0] * numUser[1]**2) / (4 * math.tan(math.pi / numUser[0])))
+#plochadPravilnogo()
+
+#Программа должна вывести 4 числа (каждое на отдельной строке) – среднее арифметическое,
+# геометрическое, гармоническое и квадратичное.
+
+def arifmetika():
+    numUser = [float(input()), float(input())]
+    print((numUser[0] + numUser[1]) / 2, math.sqrt(numUser[0] * numUser[1]), 2 / (1 / numUser[0] + 1 / numUser[1]), math.sqrt((numUser[0]**2 + numUser[1]**2) / 2), sep="\n")
+#arifmetika()
+
+#Даны три действительных числа a, b, c.
+# Напишите программу, которая находит действительные корни квадратного уравнения:
+
+def kvadratnoe():
+    numUser = [float(input()), float(input()), float(input())]
+    diskriminant = numUser[1]**2 - 4 * numUser[0] * numUser[2]
+
+    if diskriminant < 0:
+        print("Нет корней")
+    elif diskriminant == 0:
+        rezult1 = (-numUser[1] / (2 * numUser[0]))
+        if rezult1 == -0.0: # костыль для вывода -0.0 =)
+            print(int(+rezult1))
+        else:
+            print(rezult1)
+    else:
+        rezult1 = (-numUser[1] + math.sqrt(diskriminant)) / (2 * numUser[0])
+        rezult2 = (-numUser[1] - math.sqrt(diskriminant)) / (2 * numUser[0])
+        print(min(rezult1, rezult2))
+        print(max(rezult1, rezult2))
+#kvadratnoe()
