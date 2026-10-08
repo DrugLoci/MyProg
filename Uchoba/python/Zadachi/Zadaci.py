@@ -949,3 +949,21 @@ def kvadratnoe():
         print(min(rezult1, rezult2))
         print(max(rezult1, rezult2))
 #kvadratnoe()
+
+#На вход программе подаются три натуральных числа
+#m: стартовое количество организмов;
+#p: среднесуточное увеличение в %
+#n: количество дней для размножения.
+#Задача решается через сложный процент.
+def populacia():
+    vvodUser = [int(input()), int(input()), int(input())]
+    for i in range(vvodUser[2]):
+        if vvodUser[2] == 1: # костыль под задачу =)
+            print(i+1, vvodUser[0])
+            break
+        if i == 0:
+            print(i+1, float(vvodUser[0]))
+        if i+1 == vvodUser[2]:
+            break
+        print(i+2, vvodUser[0] * (1 + vvodUser[1] / 100)**(i + 1))
+#populacia()
