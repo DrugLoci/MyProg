@@ -967,3 +967,124 @@ def populacia():
             break
         print(i+2, vvodUser[0] * (1 + vvodUser[1] / 100)**(i + 1))
 #populacia()
+
+#На вход программе подаются натуральное число n, а затем n целых чисел,
+# каждое на отдельной строке. Напишите программу, которая подсчитывает сумму введённых чисел
+# (не включая само число n).
+def summa():
+    rangeUser = int(input())
+    arrayUser = []
+    rezult = 0
+
+    for _ in range(rangeUser):
+        arrayUser += [int(input())]
+
+    for i in range(rangeUser):
+        rezult += arrayUser[i]
+
+    print(rezult)
+#summa()
+
+#На вход программе подаётся натуральное число n.
+# Напишите программу, которая вычисляет значение выражения
+def acimpotichnoe():
+    numUser = int(input())
+    summa = 0.0
+
+    for i in range(1, numUser+1):
+        summa += 1 / i
+
+    print(summa - math.log(numUser))
+#acimpotichnoe()
+
+#На вход программе подаётся натуральное число n.
+# Напишите программу, которая подсчитывает сумму тех чисел от 1 до n (включительно),
+# квадрат которых оканчивается на 2, на 5 или на 8.
+def summaNum2():
+    numUser = int(input())
+    summa = 0
+
+    for i in range(1, numUser+1):
+        if i**2 % 10 == 2 or i**2 % 10 == 5 or i**2 % 10 == 8:
+            summa += i
+
+    print(summa)
+#summaNum2()
+
+#На вход программе подаётся натуральное число n. Напишите программу, которая вычисляет n!.
+def factorial():
+    numUser = int(input())
+    print(math.factorial(numUser))
+#factorial()
+
+#Напишите программу, которая считывает 10 чисел и выводит произведение отличных от нуля чисел.
+def proizvedenie():
+    rezult = 1
+
+    for i in range(10):
+        vvodUser = int(input())
+        if vvodUser != 0:
+            rezult *= vvodUser
+        if i == 9:
+            print(rezult)
+#proizvedenie()
+
+#На вход программе подаётся натуральное число n. Напишите программу, которая вычисляет сумму всех его делителей.
+def summaDelitelei():
+    numUser = int(input())
+    rezult = 0
+
+    for i in range(1, numUser+1):
+        if numUser % i == 0:
+            rezult += i
+        if i == numUser:
+            print(rezult)
+#summaDelitelei()
+
+#Напишите программу, которая считывает последовательность из 10 целых чисел и определяет, является ли каждое из них чётным или нет.
+def chetnoe():
+    for i in range(10):
+        if int(input()) % 2 != 0:
+            print("NO")
+            break
+        if i == 9:
+            print("YES")
+
+#chetnoe()
+
+#На вход программе подаётся натуральное число n. Напишите программу вычисления знакочередующейся суммы
+def znakchet():
+    numUser = int(input())
+    rezult = 1
+
+    for i in range(1, numUser+1):
+        if i % 2 != 0:
+            rezult -= i+1
+        if i % 2 == 0:
+            rezult += i+1
+        if i == numUser-1:
+            print(rezult)
+        if numUser == 1:
+            print(numUser)
+#znakchet()
+
+#На вход программе подаются натуральное число n(n≥2),
+# а затем n различных натуральных чисел последовательности, каждое на отдельной строке.
+# Напишите программу, которая выводит наибольшее и второе наибольшее число последовательности.
+def max2():
+    rangeUser = int(input())
+    numbers = [int(input()) for _ in range(rangeUser)]
+    numbers.sort(reverse=True)
+    print(numbers[0])
+    print(numbers[1])
+#max2()
+
+#Напишите программу, которая считывает натуральное число n и выводит первые n чисел последовательности Фибоначчи.
+def fibonachi():
+    n = int(input())
+    a, b = 1, 1
+
+    for _ in range(n):
+        print(a, end=" ")
+        a, b = b, a + b
+#fibonachi()
