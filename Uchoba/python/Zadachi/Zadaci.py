@@ -923,7 +923,7 @@ def plochadPravilnogo():
 #Программа должна вывести 4 числа (каждое на отдельной строке) – среднее арифметическое,
 # геометрическое, гармоническое и квадратичное.
 
-def arifmetika():
+def arithmetic():
     numUser = [float(input()), float(input())]
     print((numUser[0] + numUser[1]) / 2, math.sqrt(numUser[0] * numUser[1]), 2 / (1 / numUser[0] + 1 / numUser[1]), math.sqrt((numUser[0]**2 + numUser[1]**2) / 2), sep="\n")
 #arifmetika()
@@ -1088,3 +1088,120 @@ def fibonachi():
         print(a, end=" ")
         a, b = b, a + b
 #fibonachi()
+
+#На блиц-игру с шахматным компьютером AlphaZero выстроилась очередь людей.
+# Сэм болеет за Александру и Левона и не хочет смотреть игры других участников.
+# Сэму интересно, сколько людей стоят в очереди между Александрой и Левоном, потому что если придётся долго ждать, Сэм отлучится на перекус 🍔 в кафе.
+# Также известно, что Александра пришла раньше Левона, поэтому будет стоять в очереди перед ним.
+def alexLevon():
+    inputName = input()
+    nameStart = " "
+    quantity = -1
+
+    while True:
+        if inputName == "Левон":
+            break
+        if inputName == "Александра":
+            nameStart = inputName
+        if nameStart == "Александра":
+            quantity += 1
+
+        inputName = input()
+
+    print(quantity)
+#alexLevon()
+
+#Всем известно, что ведьмак способен одолеть любых чудовищ, однако его услуги обойдутся недешево.
+# К тому же ведьмак не принимает купюры, он принимает только чеканные монеты.
+# В мире ведьмака существуют монеты с номиналами 1,5,10,25.
+def vedmak1():
+    inputNumber = int(input())
+    quatity = 0
+
+    while True:
+        if inputNumber < 1:
+            break
+        if inputNumber >= 25:
+            inputNumber -= 25
+            quatity += 1
+        if inputNumber >= 10:
+            inputNumber -= 10
+            quatity += 1
+        if inputNumber >= 5:
+            inputNumber -= 5
+            quatity += 1
+        if inputNumber >= 1:
+            inputNumber -= 1
+            quatity += 1
+
+    print(quatity)
+#vedmak1()
+def vedmak1_1():
+    inputNumber = int(input())
+    quatity = 0
+
+    while True:
+        if inputNumber < 1:
+            break
+        while inputNumber >= 25:
+            inputNumber -= 25
+            quatity += 1
+        while inputNumber >= 10:
+            inputNumber -= 10
+            quatity += 1
+        while inputNumber >= 5:
+            inputNumber -= 5
+            quatity += 1
+        while inputNumber >= 1:
+            inputNumber -= 1
+            quatity += 1
+
+    print(quatity)
+#vedmak1_1()
+
+#На вход программе подаются четыре целых числа h1, m1, h2, m2,
+# которые задают временной промежуток от h₁:m₁ до h₂:m₂.
+# Напишите программу, которая выводит все моменты времени между этими промежутками
+# (включая границы) в формате hh:mm с интервалом в 1 минуту, каждый на отдельной строке.
+def vremenniy1():
+    inputTime = [[int(input()), int(input())], [int(input()), int(input())]]
+    time = [inputTime[0][0], inputTime[0][1]]
+
+    while True:
+        print(f"{time[0]}:{time[1]}")
+        time[1] += 1
+
+        if time[0] == inputTime[1][0] and time[1] == inputTime[1][1]:
+            break
+
+        if time[1] == 59:
+            time[1] = 00
+            if time[0] < 24:
+                time[0] += 1
+            else:
+                time[0] = 00
+#vremenniy1()
+def vremenniy1_1():
+    inputIntTime = [[int(input()), int(input())], [int(input()), int(input())]]
+    strTime = [str(inputIntTime[0][0]), str(inputIntTime[0][1])]
+
+    while True:
+        if int(strTime[0]) <= 9 and len(strTime[0]) < 2: # привожу значения в нормальный вид 00:00
+            strTime[0] = "0" + strTime[0]
+        if int(strTime[1]) <= 9 and len(strTime[1]) < 2:
+            strTime[1] = "0" + strTime[1]
+
+        print(f"{strTime[0]}:{strTime[1]}")
+
+        if int(strTime[0]) == inputIntTime[1][0] and int(strTime[1]) == inputIntTime[1][1]: # завершаю цикл после достижения стоп времени
+            break
+
+        if int(strTime[1]) == 59: # что бы после 59 минут следующая минута была 00
+            strTime[1] = "00"
+            if int(strTime[0]) < 24: # так же после 59 минут добовляю +1 час если часов 24 часа уже
+                strTime[0] = str(int(strTime[0]) + 1)
+            else: # если уже 24 часа то обнуляю часы
+                strTime[0] = "00"
+
+        strTime[1] = str(int(strTime[1]) + 1) # +1 минута
+vremenniy1_1()
