@@ -1202,6 +1202,6 @@ def vremenniy1_1():
                 strTime[0] = str(int(strTime[0]) + 1)
             else: # если уже 24 часа то обнуляю часы
                 strTime[0] = "00"
-
-        strTime[1] = str(int(strTime[1]) + 1) # +1 минута
-vremenniy1_1()
+        else:
+            strTime[1] = str(int(strTime[1]) + 1)  # +1 минута
+#vremenniy1_1()
