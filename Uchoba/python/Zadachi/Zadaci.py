@@ -1205,3 +1205,56 @@ def vremenniy1_1():
         else:
             strTime[1] = str(int(strTime[1]) + 1)  # +1 минута
 #vremenniy1_1()
+
+#Дано натуральное число n(n≥10).
+# Напишите программу, которая определяет его максимальную и минимальную цифры и выводит текст в
+# следующем формате:
+def maxOrMin():
+    numUserVvod = int(input())
+    number = 0
+    numMax = 0
+    numMin = 9
+
+    while numUserVvod > 0:
+        number = numUserVvod % 10
+        numUserVvod = numUserVvod // 10
+
+        if numMax < number:
+            numMax = number
+        if numMin > number:
+            numMin = number
+
+    print(f"Максимальная цифра равна {numMax}")
+    print(f"Минимальная цифра равна {numMin}")
+#maxOrMin()
+
+# Дано натуральное число. Напишите программу, которая вычисляет:
+# сумму его цифр;
+# количество цифр в нем;
+# произведение его цифр;
+# среднее арифметическое его цифр;
+# его первую цифру;
+# сумму его первой и последней цифры.
+def numInfo():
+    numUserVvod = int(input())
+    lenNumber = len(str(numUserVvod))
+    amount = 0  # сумма
+    composition = 1 # произведение
+    oneNumber = 0 # первую цифру
+    amountOneAndPastNumber = 0 # сумма первого и последнего
+
+    for i in range(lenNumber):
+        number = numUserVvod % 10 # забираю цифру из числа после отсекаю её от общего числа
+        numUserVvod = numUserVvod // 10
+
+        amount += number
+        composition *= number
+
+        if i == 0:
+            amountOneAndPastNumber += number
+        if i == lenNumber-1:
+            amountOneAndPastNumber += number
+            oneNumber += number
+
+    print(amount, lenNumber, composition, amount / lenNumber, oneNumber, amountOneAndPastNumber, sep="\n")
+#numInfo()
