@@ -1258,3 +1258,23 @@ def numInfo():
 
     print(amount, lenNumber, composition, amount / lenNumber, oneNumber, amountOneAndPastNumber, sep="\n")
 #numInfo()
+
+# На обработку поступает последовательность из 10 целых чисел (каждое на отдельной строке).
+# Нужно написать программу, которая выводит на экран количество неотрицательных чисел последовательности
+# и их произведение. Если неотрицательных чисел нет, требуется вывести на экран «NO» (без кавычек).
+def pologitelnoePlusProizvedenie():
+    rezult = 1
+    quantity = 0
+
+    for _ in range(10):
+        userInputInt = int(input())
+
+        if userInputInt >= 0:
+            quantity += 1
+            rezult *= userInputInt
+
+    if quantity == 0:
+        print("NO")
+    else:
+        print(quantity, rezult, sep="\n")
+#pologitelnoePlusProizvedenie()
